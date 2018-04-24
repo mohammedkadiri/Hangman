@@ -59,7 +59,6 @@ void start(char *list[])
     //Declaration and intialisation of variables
     char word[MAX_LENGTH];
     char userWord[MAX_LENGTH];
-    char tempWord[2];
     char checkLetters[MAX_LENGTH];
     char letter;
     char temp;
@@ -95,7 +94,7 @@ void start(char *list[])
         check = false;
         printf("\n\nEnter a char: ");
         letter = getchar();
-        fflush(stdin);
+        fflush(stdin); //Clear buffer
 
         //Loop to ensure to that user does not select a letter they have selected before
         for(i = 0; i < length; i++)
